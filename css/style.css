@@ -12,12 +12,17 @@ ul#icons span.ui-icon {float: left; margin: 0 4px;}
 .signup-table{
 	
 	text-align: center;
+	border: none;
 }
 
 .signup-table td{
 	border: none;
 	padding: 10px;
 	
+}
+
+.signup-table tr{
+	border: none;
 }
 
 .weepstakes-signup-holder{
@@ -27,4 +32,40 @@ ul#icons span.ui-icon {float: left; margin: 0 4px;}
 .text-center{
 	text-align: center;
 	padding: 6px;
+}
+
+.instruction-class{
+	font-size: 11px;
+}
+
+.dont-have-luckynumber{
+		
+}
+
+.email-error{
+	background-color: #FFEBE8;
+	border-color: #CC0000;
+	margin: 0 0 16px 8px;
+	padding: 12px;
+	border-radius: 3px 3px 3px 3px;
+	border-style: solid;
+	border-width: 1px;
+
+	line-height: 1.4em;
+}
+
+.email-success{
+	background-color: #DEDE25;
+	border-color: #FFBB3F;
+	margin: 0 0 16px 8px;
+	padding: 12px;
+	border-radius: 3px 3px 3px 3px;
+	border-style: solid;
+	border-width: 1px;
+
+	line-height: 1.4em;
+}
+
+#ajax-loader{
+	text-align: center;
 }

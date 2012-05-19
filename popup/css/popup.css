@@ -1,0 +1,51 @@
+/* 
+    Document   : popup
+    Created on : Dec 30, 2011, 1:19:02 AM
+    Author     : s
+    Description:
+        Purpose of the stylesheet follows.
+        
+        styling the popup window
+
+*/
+
+#blanket {
+    background-color: #E5E5E5;
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 9998;
+}
+#popup .window {
+    border: 20px solid #DDDDDD;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 20px #000000;
+    display: none;
+    position: fixed;
+    z-index: 9999;
+}
+
+#popup #popup-content {
+    background-color: #FFFFFF;
+    padding: 10px;
+}
+#popup .close {
+    background: url("close_pop.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    height: 50px;
+	width: 50px;
+    position: absolute;
+    right: -29px;
+    top: -31px;
+    z-index: 9999;
+}
+#popup h2{
+text-align: center;
+}
+
+#popup-content{
+	width: 400px;
+	text-align: center;
+	vertical-align: middle;
+}
