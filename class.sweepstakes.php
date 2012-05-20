@@ -178,7 +178,10 @@ class sweepstakes_management{
 			<input type='hidden' name='signed-up' value='Y' />
 			<table class='signup-table'>
 				<tr>
-					<td>Name:</td> <td><input style='width:60%' type='text' name='sw-name'></td>
+					<td>First Name:</td> <td><input style='width:60%' type='text' name='sw-name'></td>
+				</tr>
+				<tr>
+					<td>Last Name:</td> <td><input style='width:60%' type='text' name='sw-name-last'></td>
 				</tr>
 				<tr>
 					<td>Email:</td> <td><input style='width:60%' type='text' name='sw-email'></td>
@@ -347,7 +350,7 @@ class sweepstakes_management{
 						global $wpdb;
 						$tables = self::get_table_name();
 						$table = $tables['email'];
-						$wpdb->insert($table, array('name'=>trim($_POST['sw-name']), 'email'=>trim($_POST['sw-email']), 'number_id'=>$id), array('%s', '%s', '%d'));
+						$wpdb->insert($table, array('name'=>trim($_POST['sw-name']).' '.trim($_POST['sw-name-last']), 'email'=>trim($_POST['sw-email']), 'number_id'=>$id), array('%s', '%s', '%d'));
 						self::$success[] = self::get_success_message();
 					}
 					else{
